@@ -17,7 +17,7 @@ app.use(middleware.logger)
 
 //Now this is used only in about
 app.get('/about',middleware.requireAuthentication,function(req,res) {
- res.send('We are the cool dudes of NodeJS express');
+ res.send('We are the cool dudes of NodeJS express!!');
 });
 
 app.use(express.static(__dirname+'/public'));
